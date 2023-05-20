@@ -235,13 +235,17 @@ li {
 }
 
 .produk-desa {
-    display: flex;
     width: 85%;
     margin: auto;
 }
 
-.kokan {
-    margin-top: 5rem;
+.konten {
+    display: flex;
+    align-items: flex-end;
+}
+
+.kontenkanan {
+    /* margin-top: 5rem; */
     width: 50%;
     display: flex;
     gap: 20px;
@@ -249,8 +253,8 @@ li {
     justify-content: flex-end;
 }
 
-.kokan .pangan,
-.kokan .wisata {
+.kontenkanan .pangan,
+.kontenkanan .wisata {
     width: 249px;
     height: 184px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -264,36 +268,38 @@ li {
     justify-content: center;
 }
 
-.kokan .pangan p,
-.kokan .wisata p {
+.kontenkanan .pangan p,
+.kontenkanan .wisata p {
     font-weight: 600;
     font-size: 20px;
     color: #F5F5F5;
 }
 
-.kokan .pangan img,
-.kokan .wisata img {
+.kontenkanan .pangan img,
+.kontenkanan .wisata img {
     width: 80px;
 }
 
-.kokir {
-    margin-top: 5rem;
+.kontenkiri {
+    /* margin-top: 2rem; */
     width: 50%;
+    /* margin: auto; */
 }
 
-.kokir h1 {
+.produk-desa h1 {
+    margin-top: 5rem;
     color: #009D4C;
-    font-size: 46px;
+    font-size: 2.8rem;
 }
 
-.kokir p {
-    margin-top: 3rem;
+.kontenkiri p {
+    margin-top: 1rem;
     color: #495057;
     padding-right: 11rem;
     font-size: 24px;
 }
 
-.kokir p span {
+.kontenkiri p span {
     color: #495057;
     font-size: 24px;
     font-weight: 600;
@@ -680,7 +686,7 @@ input[type=checkbox] {
         width: 100%;
     }
 
-    .misi{
+    .misi {
         margin-top: 3rem;
     }
 
@@ -690,7 +696,7 @@ input[type=checkbox] {
         font-size: 1.2rem;
     }
 
-    .struktur .keterangan{
+    .struktur .keterangan {
         top: 14%;
         font-size: 2.2rem;
     }
@@ -701,16 +707,34 @@ input[type=checkbox] {
         overflow-x: scroll;
         justify-content: start;
     }
+
     .card {
         padding: 1.5rem 3rem;
     }
 
-    .infografis {
-        display: none;
+    .produk-desa .konten {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
+    .produk-desa h1{
+        text-align: center;
+    }
 
-    .produk-desa {
+    .kontenkiri {
+        width: 100%;
+    }
+
+    .kontenkiri p{
+        padding-right: 0;
+    }
+
+    .kontenkanan {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .infografis {
         display: none;
     }
 
