@@ -172,7 +172,6 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 100%;
     width: 100%;
 }
 
@@ -206,7 +205,6 @@ li {
     background-color: #04C26D;
     border-radius: 12px;
     height: 300px;
-    /* flex-basis: calc(28% - 1rem); */
     margin-top: 18.6rem;
     margin-bottom: 5rem;
 }
@@ -216,9 +214,7 @@ li {
 }
 
 .card img {
-    /* width: 100%; */
     border-radius: 208px;
-    /* border-top-right-radius: 50%; */
     border: 10px solid #2dac5d;
 }
 
@@ -664,6 +660,7 @@ input[type=checkbox] {
 
     .lisan h1,
     .lisan h1 span {
+        margin-top: -1.8rem;
         font-size: 2.2rem;
         text-align: center;
         padding: 0;
@@ -693,13 +690,25 @@ input[type=checkbox] {
         font-size: 1.2rem;
     }
 
+    .struktur .keterangan{
+        top: 14%;
+        font-size: 2.2rem;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: start;
+    }
+    .card {
+        padding: 1.5rem 3rem;
+    }
+
     .infografis {
         display: none;
     }
 
-    .struktur {
-        display: none;
-    }
 
     .produk-desa {
         display: none;
