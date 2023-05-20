@@ -717,7 +717,7 @@ input[type=checkbox] {
         align-items: center;
     }
 
-    .produk-desa h1{
+    .produk-desa h1 {
         text-align: center;
     }
 
@@ -725,13 +725,19 @@ input[type=checkbox] {
         width: 100%;
     }
 
-    .kontenkiri p, .kontenkiri p span{
+    .kontenkiri p,
+    .kontenkiri p span {
         padding-right: 0;
         font-size: 1.2rem;
     }
 
-    .kontenkanan .pangan, .kontenkanan .wisata{
+    .kontenkanan .pangan,
+    .kontenkanan .wisata {
         padding: 1.25rem 2.5rem;
+    }
+
+    .kontenkiri p {
+        padding-right: 0;
     }
 
     .kontenkanan {
