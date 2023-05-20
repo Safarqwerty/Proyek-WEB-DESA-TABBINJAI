@@ -67,7 +67,7 @@ li {
 
 .menu li a:hover {
     color: #009D4C;
-    /* transition: 0.3s ease; */
+    transition: 0.3s ease;
     font-weight: 600;
 }
 
@@ -76,7 +76,6 @@ li {
 }
 
 .profil {
-    /* height: 100vh; */
     width: 85%;
     margin: auto;
     display: flex;
@@ -89,7 +88,7 @@ li {
 }
 
 .lisan h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     padding-right: 10rem;
     font-weight: 800;
     line-height: 120%;
@@ -245,7 +244,7 @@ li {
     font-size: 24px;
 }
 
-.kontainer {
+.produk-desa {
     display: flex;
     width: 85%;
     margin: auto;
@@ -638,7 +637,7 @@ input[type=checkbox] {
         padding: 2rem 0;
     }
 
-    .nav-links a{
+    .nav-links a {
         color: #F5F5F5;
     }
 
@@ -653,5 +652,55 @@ input[type=checkbox] {
 
     .navbar {
         padding: 1.5rem 2rem;
+    }
+
+    .profil {
+        flex-direction: column-reverse;
+        width: 80%;
+    }
+
+    .profil .gambar,
+    .profil .lisan {
+        width: 100%;
+    }
+
+    .profil .gambar img {
+        width: 100%;
+    }
+
+    .lisan h1,
+    .lisan h1 span {
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .lisan h6 {
+        padding: 0;
+        text-align: center;
+    }
+
+    .vismis {
+        display: none;
+    }
+
+    .infografis {
+        display: none;
+    }
+
+    .struktur {
+        display: none;
+    }
+
+    .produk-desa {
+        display: none;
+    }
+
+    .berita {
+        display: none;
+    }
+
+    .footer {
+        display: none;
     }
 }
