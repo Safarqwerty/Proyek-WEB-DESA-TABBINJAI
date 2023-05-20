@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE dan Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.188rem 7.2rem;
+    color: #009D4C;
+    /* position: fixed; */
+}
+
+.nav-links a {
+    color: #141414;
+    font-weight: 400;
+}
+
+/* LOGO */
+.logo a {
+    font-size: 25px;
+    color: #009D4C;
+    font-weight: 600;
+}
+
+.logo h6 {
+    color: #495057;
+    font-weight: 400;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 0.1em;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #009D4C;
+    /* transition: 0.3s ease; */
+    font-weight: 600;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.profil {
+    /* height: 100vh; */
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+
+.profil .lisan {
+    width: 50%;
+    margin: 5rem 0rem;
+}
+
+.lisan h1 {
+    font-size: 56px;
+    padding-right: 10rem;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.lisan h1 span {
+    font-size: 56px;
+    padding-right: 10rem;
+    color: #009D4C;
+    font-weight: 800;
+}
+
+.lisan h6 span {
+    color: #495057;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.lisan h6 {
+    margin-top: 32px;
+    font-weight: 100;
+    color: #495057;
+    font-size: 20px;
+    padding-right: 10rem;
+}
+
+
+.profil .gambar {
+    width: 50%;
+}
+
+.gambar img {
+    background: content-box radial-gradient(48.59% 48.45% at 49.07% 49.07%, rgba(4, 194, 109, 0.32) 0%, rgba(58, 224, 83, 0) 92.48%);
+}
+
+.vismis {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.vismis .visi {
+    width: 50%;
+}
+
+.visi h1 {
+    color: #009D4C;
+    font-size: 46px;
+    margin-top: 1.5rem;
+}
+
+.visi h6 {
+    color: #495057;
+    font-size: 24px;
+    font-weight: 200;
+    padding-right: 11rem;
+    margin-top: 1rem;
+    /* text-align: justify; */
+    letter-spacing: 0.25%;
+}
+
+.vismis .misi {
+    width: 50%;
+}
+
+.misi h1 {
+    color: #009D4C;
+    font-size: 46px;
+    margin-top: 1.5rem;
+}
+
+.misi h6 {
+    color: #495057;
+    font-size: 24px;
+    font-weight: 200;
+    padding-right: 9.5rem;
+    margin-top: 1rem;
+    /* text-align: justify; */
+    letter-spacing: 0.25%;
+}
+
+.struktur {
+    background-image: url(images/bg.png);
+    margin-top: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.struktur .keterangan {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 46px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem 5rem;
+    transition: 0.3s;
+    margin: 0.5rem;
+    background-color: #04C26D;
+    border-radius: 12px;
+    height: 300px;
+    /* flex-basis: calc(28% - 1rem); */
+    margin-top: 18.6rem;
+    margin-bottom: 5rem;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    /* width: 100%; */
+    border-radius: 208px;
+    /* border-top-right-radius: 50%; */
+    border: 10px solid #2dac5d;
+}
+
+.card .container {
+    padding: 1rem;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.card .container h4 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.card .container p {
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.kontainer {
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+.kokan {
+    margin-top: 5rem;
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.kokan .pangan,
+.kokan .wisata {
+    width: 249px;
+    height: 184px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #04C26D;
+    border-radius: 10px;
+    padding: 24px 46px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.kokan .pangan p,
+.kokan .wisata p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #F5F5F5;
+}
+
+.kokan .pangan img,
+.kokan .wisata img {
+    width: 80px;
+}
+
+.kokir {
+    margin-top: 5rem;
+    width: 50%;
+}
+
+.kokir h1 {
+    color: #009D4C;
+    font-size: 46px;
+}
+
+.kokir p {
+    margin-top: 3rem;
+    color: #495057;
+    padding-right: 11rem;
+    font-size: 24px;
+}
+
+.kokir p span {
+    color: #495057;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.infografis {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+    margin-top: 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infografis .tengah {
+    display: flex;
+    width: 25rem;
+    height: 25rem;
+    align-items: center;
+    background: #009D4C;
+    box-shadow: inset -2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.kiri p,
+.kanan p {
+    font-size: 24px;
+    color: #495057;
+    background-color: #DDDDDD;
+    border-radius: 45px;
+}
+
+.subinfokiri,
+.subinfokanan {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.subinfokanan {
+    align-items: end;
+}
+
+.subinfokiri {
+    align-items: start;
+}
+
+.item {
+    display: flex;
+    background-color: #DDDDDD;
+    align-items: center;
+    border-radius: 45px;
+}
+
+.kiri i,
+.kanan i {
+    font-size: 35px;
+    color: #fff;
+    background-color: #04C26D;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
+.kiri p {
+    padding: 1.2rem 5rem 1.2rem 2rem;
+}
+
+.kiri .atas {
+    padding: 1.2rem 5.5rem 1.2rem 2rem;
+}
+
+.kiri .bawah {
+    padding: 1.2rem 2rem 1.2rem 2rem;
+}
+
+.kanan p {
+    padding: 1.2rem 2rem 1.2rem 5rem;
+}
+
+.kanan .atas {
+    padding: 1.2rem 2rem 1.2rem 2rem;
+}
+
+.kanan .bawah {
+    padding: 1.2rem 2rem 1.2rem 5.5rem;
+}
+
+
+.tengah p {
+    font-weight: 600;
+    font-size: 56px;
+    color: #F5F5F5;
+}
+
+.berita-berita {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.berita-berita {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.berita h1 {
+    margin-top: 8rem;
+    font-weight: 600;
+    font-size: 56px;
+    color: #009D4C;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.berita-berita .berita-utama {
+    width: 50%;
+}
+
+.berita-utama img {
+    width: 100%;
+}
+
+.berita-berita .sub-berita {
+    width: 50%;
+}
+
+.berita-berita .info-berita {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0;
+    gap: 1rem;
+    align-items: center;
+}
+
+.info-berita .judul {
+    background-color: #04C26D;
+    padding: 0.6rem 2.5rem;
+    color: #F5F5F5;
+    font-size: 1rem;
+}
+
+.info-berita i {
+    color: #727272;
+    font-size: 1.2rem;
+}
+
+.info-berita p {
+    color: #727272;
+    font-size: 0.75rem;
+}
+
+.deskripsi-berita h1 {
+    font-size: 1.4rem;
+    color: #141414;
+    margin: 1rem 0 0.2rem 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.deskripsi-berita p {
+    font-size: 1.2rem;
+    color: #495057;
+    margin: 0;
+    text-align: justify;
+}
+
+.deskripsi-berita .bc {
+    font-size: 1.2rem;
+    color: #04C26D;
+    margin: 0.5rem 0;
+    text-decoration-line: underline;
+    text-align: justify;
+}
+
+.sub-berita {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.sub-berita .britae {
+    width: 48%;
+}
+
+
+.britae img {
+    width: 100%;
+    display: block;
+}
+
+.britae .judul {
+    background-color: #04C26D;
+    padding: 0.5rem 2rem;
+    color: #F5F5F5;
+    font-size: 1rem;
+}
+
+.sub-berita .ls {
+    font-size: 1.2rem;
+    color: #04C26D;
+    margin: 0.5rem 0;
+    text-decoration-line: underline;
+    text-align: justify;
+}
+
+.footer {
+    background-image: url(images/Footer.png);
+    margin-top: 8rem;
+    width: 100%;
+    height: 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer .kesimpulan {
+    position: absolute;
+    text-align: center;
+    /* margin: auto; */
+    /* margin-top: 5rem; */
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kesimpulan h1 {
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+.kesimpulan p {
+    margin-top: 0.5rem;
+    color: #DDDDDD;
+    font-size: 1.5rem;
+}
+
+.kesimpulan span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.footer .kontak {
+    position: absolute;
+    display: flex;
+    gap: 0.5rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    color: #F5F5F5;
+    background-color: #04C26D;
+    justify-content: center;
+    width: 15%;
+    padding: 0.8rem 0;
+    border-radius: 12px;
+}
+
+.footer hr {
+    position: absolute;
+    width: 85%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 85%;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F5F5F5;
+}
+
+.footer .copyright .log {
+    background-color: #04C26D;
+    padding: 1rem 2rem;
+    font-weight: 700;
+}
+
+.footer .copyright .servis {
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #009D4C;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
