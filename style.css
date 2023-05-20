@@ -9,17 +9,14 @@
 
 body {
     overflow-y: scroll;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
-body {
     -ms-overflow-style: none;
     /* IE dan Edge */
     scrollbar-width: none;
     /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 a {
@@ -38,7 +35,10 @@ li {
     justify-content: space-between;
     padding: 2.188rem 7.2rem;
     color: #009D4C;
-    /* position: fixed; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 
 .nav-links a {
@@ -80,6 +80,7 @@ li {
     width: 85%;
     margin: auto;
     display: flex;
+    margin-top: 8rem;
 }
 
 .profil .lisan {
@@ -621,28 +622,36 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: #009D4C;
+        background-color: #04C26D;
         right: 0;
         left: 0;
         text-align: center;
-        padding: 16px 0;
+        padding: 1rem 0;
     }
 
     .menu li:hover {
         display: inline-block;
-        background-color: #4c9e9e;
         transition: 0.3s ease;
     }
 
-    .menu li+li {
-        margin-top: 12px;
+    .menu li {
+        padding: 2rem 0;
+    }
+
+    .nav-links a{
+        color: #F5F5F5;
     }
 
     input[type=checkbox]:checked~.menu {
         display: block;
+        margin-top: 2rem;
     }
 
     .hamburger {
         display: block;
+    }
+
+    .navbar {
+        padding: 1.5rem 2rem;
     }
 }
