@@ -307,7 +307,6 @@ li {
 
 .infografis {
     display: flex;
-    flex-direction: row;
     width: 85%;
     margin: auto;
     margin-top: 6rem;
@@ -315,7 +314,7 @@ li {
     align-items: center;
 }
 
-.infografis .tengah {
+.infografis .info-tengah {
     display: flex;
     width: 25rem;
     height: 25rem;
@@ -324,15 +323,14 @@ li {
     box-shadow: inset -2px 2px 10px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     text-align: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: space-between;
+    /* flex-wrap: nowrap; */
+    /* align-content: space-around; */
+    justify-content: space-around;
 }
 
-.kiri p,
-.kanan p {
-    font-size: 24px;
+.info-kiri p,
+.info-kanan p {
+    font-size: 1.5rem;
     color: #495057;
     background-color: #DDDDDD;
     border-radius: 45px;
@@ -360,8 +358,8 @@ li {
     border-radius: 45px;
 }
 
-.kiri i,
-.kanan i {
+.info-kiri i,
+.info-kanan i {
     font-size: 35px;
     color: #fff;
     background-color: #04C26D;
@@ -369,34 +367,34 @@ li {
     border-radius: 50%;
 }
 
-.kiri p {
+.info-kiri p {
     padding: 1.2rem 5rem 1.2rem 2rem;
 }
 
-.kiri .atas {
+.info-kiri .atas {
     padding: 1.2rem 5.5rem 1.2rem 2rem;
 }
 
-.kiri .bawah {
+.info-kiri .bawah {
     padding: 1.2rem 2rem 1.2rem 2rem;
 }
 
-.kanan p {
+.info-kanan p {
     padding: 1.2rem 2rem 1.2rem 5rem;
 }
 
-.kanan .atas {
+.info-kanan .atas {
     padding: 1.2rem 2rem 1.2rem 2rem;
 }
 
-.kanan .bawah {
+.info-kanan .bawah {
     padding: 1.2rem 2rem 1.2rem 5.5rem;
 }
 
 
-.tengah p {
+.info-tengah p {
     font-weight: 600;
-    font-size: 56px;
+    font-size: 3.5rem;
     color: #F5F5F5;
 }
 
@@ -666,7 +664,7 @@ input[type=checkbox] {
 
     .lisan h1,
     .lisan h1 span {
-        margin-top: -1.8rem;
+        margin-top: -3rem;
         font-size: 2.2rem;
         text-align: center;
         padding: 0;
@@ -746,7 +744,35 @@ input[type=checkbox] {
     }
 
     .infografis {
-        display: none;
+        flex-direction: column;
+    }
+
+    .infografis .info-tengah {
+        order: 1;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .info-tengah p {
+        display: inline-block;
+        font-size: 2.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .infografis .info-kiri {
+        order: 3;
+        margin-top: 3rem;
+    }
+
+    .infografis .info-kanan {
+        order: 2;
+        margin-top: 2rem;
+    }
+
+    .info-kiri p,
+    .info-kanan p {
+        font-size: 1.2rem;
     }
 
     .berita {
