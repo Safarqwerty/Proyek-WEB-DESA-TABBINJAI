@@ -24,10 +24,6 @@ a {
     font-size: 20px;
 }
 
-li {
-    list-style: none;
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -70,6 +66,7 @@ li {
 
 .menu li {
     padding: 5px 14px;
+    list-style: none;
 }
 
 .profil {
@@ -614,7 +611,7 @@ input[type=checkbox] {
 }
 
 /* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .menu {
         display: none;
         position: absolute;
@@ -710,7 +707,7 @@ input[type=checkbox] {
     }
 
     .card {
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 2rem;
     }
 
     .produk-desa .konten {
@@ -734,7 +731,7 @@ input[type=checkbox] {
 
     .kontenkanan .pangan,
     .kontenkanan .wisata {
-        padding: 1.25rem 2.5rem;
+        padding: 1rem 2rem;
     }
 
     .kontenkiri p {
@@ -754,6 +751,7 @@ input[type=checkbox] {
         order: 1;
         width: 20rem;
         height: 20rem;
+        justify-content: center;
     }
 
     .info-tengah p {
@@ -823,7 +821,8 @@ input[type=checkbox] {
         top: 78%;
     }
 
-    .footer .copyright .log, .footer .copyright .servis {
+    .footer .copyright .log,
+    .footer .copyright .servis {
         margin-top: 1rem;
     }
 }
