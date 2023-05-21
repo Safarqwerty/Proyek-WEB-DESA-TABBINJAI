@@ -28,12 +28,16 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.188rem 7.2rem;
+    padding: 1.5rem 7.2rem;
     color: #009D4C;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 9999;
+}
+
+.navbar.hidden {
+    top: -100px;
 }
 
 .nav-links a {
@@ -164,7 +168,7 @@ a {
 }
 
 .struktur {
-    background-image: url(images/bg.png);
+    background-image: url(/images/bg.png);
     margin-top: 6rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -512,7 +516,7 @@ a {
 }
 
 .footer {
-    background-image: url(images/Footer.png);
+    background-image: url(/images/Footer.png);
     margin-top: 8rem;
     width: 100%;
     height: 35rem;
