@@ -169,7 +169,7 @@ a {
 }
 
 .struktur {
-    background-image: url(/images/bg.png);
+    background-image: url(../images/bg.png);
     margin-top: 6rem;
     background-repeat: no-repeat;
     background-size: cover;
